@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(rgb(90, 26, 63),rgb(24, 2, 18));
+    height: 100vh;
+    font-family: system-ui;
+}
+.logo{
+    font-size: 30px;
+}
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 30px;
+}
+header ul li a:hover,.active{
+    background-color: #fff;
+    color: rgb(24, 2, 18);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to top,rgb(90, 26, 63),transparent);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(40px);
+}
+.PandaMH{
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-140px);
+}
